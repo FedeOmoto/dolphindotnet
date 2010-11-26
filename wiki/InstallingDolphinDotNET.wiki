@@ -2,4 +2,4 @@
 
 = Installing DolphinDotNET =
 
-You can obtain the DolphinDotNET package from the project's [http://code.google.com/p/dolphindotnet/downloads/list Download section]
+You can obtain the DolphinDotNET package from the project's [http://code.google.com/p/dolphindotnet/downloads/list Download section].
