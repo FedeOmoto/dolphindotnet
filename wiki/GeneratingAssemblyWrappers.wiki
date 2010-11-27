@@ -12,3 +12,9 @@ assembly generateWrappers.
 }}}
 
 If you've evaluated this example as is, be warned that it'll take a while to generate all the class wrappers (1753 classes and 39575 methods).
+
+Lets play a little with the [http://msdn.microsoft.com/en-us/library/system.windows.forms.messagebox.aspx MessageBox] class of the System.Windows.Forms assembly. First, generate wrappers for the assembly:
+
+{{{
+
+}}}
