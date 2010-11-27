@@ -24,4 +24,7 @@ dateTime1 ToString. "Display It: '1/1/0001 12:00:00 AM'"
 dateTime2 := System_DateTime DateTime: 1979 month: 10 day: 26.
 dateTime2 ToString. "Display It: '10/26/1979 12:00:00 AM'"
 dateTime2 GetDateTimeFormats. "Inspect It"
+
+System_DateTime Today ToString. "Display It"
+System_DateTime Now ToString. "Display It"
 }}}
