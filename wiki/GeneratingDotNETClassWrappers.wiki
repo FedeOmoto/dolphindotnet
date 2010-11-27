@@ -8,8 +8,8 @@ Let suppose that you want to use the [http://msdn.microsoft.com/en-us/library/sy
 
 {{{
 assembly := MonoAssembly named: 'mscorlib'.
-dateTimeClass := assembly class: 'DateTime' namespace: 'System'.
-(MonoClassBuilder on: dateTimeClass) build.
+dateTimeMonoClass := assembly class: 'DateTime' namespace: 'System'.
+(MonoClassBuilder on: dateTimeMonoClass) build.
 }}}
 
 The MonoClassBuilder class works on MonoClass objects and generate wrappers for them on #build.
