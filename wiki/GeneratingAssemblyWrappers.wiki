@@ -16,5 +16,10 @@ If you've evaluated this example as is, be warned that it'll take a while to gen
 Lets play a little with the [http://msdn.microsoft.com/en-us/library/system.windows.forms.messagebox.aspx MessageBox] class of the System.Windows.Forms assembly. First, generate wrappers for the assembly:
 
 {{{
-
+assembly := MonoAssembly named: 'System.Windows.Forms'.
+assembly generateWrappers.
 }}}
+
+Again, this will take some time...
+
+Now, some code from the [http://msdn.microsoft.com/en-us/library/system.windows.forms.messagebox.aspx MessageBox] class Examples section:
