@@ -1,3 +1,6 @@
 #summary Generating .NET class wrappers.
 
 = Generating .NET class wrappers =
+
+So, you've installed Mono, the DolphinDotNET package, configured/initialized the Mono runtime and now you're wondering "How do I use that .NET classes?".
+Well, it's easy! If all you want to do is just using some .NET classes all you've to do is generating wrappers for them.
