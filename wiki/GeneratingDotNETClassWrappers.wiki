@@ -4,4 +4,4 @@
 
 So, you've installed Mono, the DolphinDotNET package, configured/initialized the Mono runtime and now you're wondering "How do I use all that .NET classes?". If want to use some .NET classes all you've to do is generating wrappers for them.
 
-Let suppose that you want to use the DateTime class from the mscorlib assembly
+Let suppose that you want to use the [http://msdn.microsoft.com/en-us/library/system.datetime.aspx DateTime] class from the mscorlib assembly
