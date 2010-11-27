@@ -22,4 +22,15 @@ assembly generateWrappers.
 
 Again, this will take some time...
 
-Now, some code from the [http://msdn.microsoft.com/en-us/library/system.windows.forms.messagebox.aspx MessageBox] class Examples section:
+Now, some code from the Microsoft's [http://msdn.microsoft.com/en-us/library/system.windows.forms.messagebox.aspx MessageBox] class Examples section:
+
+{{{
+yes := System_Windows_Forms_DialogResult Yes.
+no := System_Windows_Forms_DialogResult No.
+buttons := System_Windows_Forms_MessageBoxButtons YesNo.
+icon := System_Windows_Forms_MessageBoxIcon Question.
+
+result := System_Windows_Forms_MessageBox Show: 'Are you sure that you would like to close the form?' caption: 'Form Closing' buttons: buttons icon: icon.
+
+Transcript show: 'Closing form: ' , (result = yes) displayString; cr
+}}}
