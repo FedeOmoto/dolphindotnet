@@ -16,3 +16,9 @@ monoRuntime initialize.
 }}}
 
 And that's it! Now you can start using .NET classes from Dolphin.
+
+Although there are some things you should know about the Mono runtime initialization process:
+
+ * The default .NET framework version to use is 4.0, if for some reason you want to use the 2.0 version you can do it by calling #version: prior invoking #initialize.
+ * Some assemblies require to be executed in a specific application domain name, you can set it with #domainName: prior invoking #initialize.
+ * 
