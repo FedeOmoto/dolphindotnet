@@ -14,3 +14,14 @@ dateTimeMonoClass := assembly class: 'DateTime' namespace: 'System'.
 
 The MonoClassBuilder class works on MonoClass objects and generate wrappers for them on #build.
 Now you can take a look at the generated wrapper, it's a subclass of MonoObject named System_DateTime.
+
+Lets play with the generated wrapper:
+
+{{{
+dateTime1 := System_DateTime new.
+dateTime1 ToString. "Display It: '1/1/0001 12:00:00 AM'"
+
+dateTime2 := System_DateTime DateTime: 1979 month: 10 day: 26.
+dateTime2 ToString. "Display It: '10/26/1979 12:00:00 AM'"
+dateTime2 GetDateTimeFormats. "Inspect It"
+}}}
