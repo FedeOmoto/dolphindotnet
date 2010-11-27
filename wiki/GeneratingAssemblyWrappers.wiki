@@ -2,3 +2,13 @@
 
 = Generating assembly wrappers =
 
+You've your own .NET assembly and want to generate wrappers for all the classes that it contains, or you just want to generate wrappers for some of the standard .NET framework assemblies.
+
+In the following example we're going to generate wrappers for all the classes contained in the mscorlib assembly. It applies also to any assembly you want to generate wrappers for, just replace the assembly name. It's important to note that the assembly name must NOT include its filename extension (exclude the .exe/.dll extension from it).
+
+{{{
+assembly := MonoAssembly named: 'mscorlib'.
+assembly generateWrappers.
+}}}
+
+If you've evaluated this example as is, be warned that it'll take a while to generate all the class wrappers (1753 classes and 39575 methods).
