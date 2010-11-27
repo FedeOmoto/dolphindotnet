@@ -1,0 +1,18 @@
+#summary Configuring and initializing the Mono runtime.
+
+= Initializing the Mono runtime =
+
+Once you've installed Mono and the DolphinDotNET package, the next step before starting using .NET from Dolphin Smalltalk is configuring/initializing the Mono runtime.
+
+Assuming you've installed Mono in the "C:\Mono-2.8" directory, you can evaluate this in a Workspace to do the runtime initialization:
+
+{{{
+| monoRuntime |
+
+monoRuntime := MonoRuntime current.
+monoRuntime assemblyPath: 'C:\Mono-2.8\lib'.
+monoRuntime configurationPath: 'C:\Mono-2.8\etc'.
+monoRuntime initialize.
+}}}
+
+And that's it! Now you can start using .NET classes from Dolphin.
