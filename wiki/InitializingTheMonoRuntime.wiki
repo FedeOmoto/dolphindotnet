@@ -21,4 +21,4 @@ Although there are some things you should know about the Mono runtime initializa
 
  * The default .NET framework version to use is 4.0, if for some reason you want to use the 2.0 version you can do it by calling #version: prior invoking #initialize.
  * Some assemblies require to be executed in a specific application domain name, you can set it with #domainName: prior invoking #initialize.
- * 
+ * Your assemblies (that is, the assemblies that are not part of the .NET framework) are searched in various default directories, see MonoRuntime>>setMonoPath. If you want to place them in some other directories you can use #additionalAssemblyPaths:
